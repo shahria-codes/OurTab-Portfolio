@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -58,10 +57,11 @@ export function Hero() {
               <div className="relative aspect-[9/16] rounded-[2rem] overflow-hidden">
                 <Image
                   src={mockupImage?.imageUrl || ""}
-                  alt="App Mockup"
+                  alt="OurTab App Dashboard Mockup"
                   fill
                   className="object-cover"
                   data-ai-hint="mobile dashboard"
+                  priority
                 />
               </div>
             </div>
