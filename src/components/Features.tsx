@@ -8,16 +8,18 @@ import {
   ShoppingCart, 
   BellRing,
   CheckCircle2,
-  Lock,
-  Users,
+  Sparkles,
   PieChart,
-  ListTodo,
-  Sparkles
+  Users,
+  Lock,
+  Zap,
+  Clock
 } from "lucide-react";
 
 const featureGroups = [
   {
     title: "Authentication & Security",
+    emoji: "🔐",
     icon: ShieldCheck,
     color: "text-blue-500",
     bg: "bg-blue-500/10",
@@ -30,6 +32,7 @@ const featureGroups = [
   },
   {
     title: "House Management",
+    emoji: "🏠",
     icon: Home,
     color: "text-emerald-500",
     bg: "bg-emerald-500/10",
@@ -44,19 +47,21 @@ const featureGroups = [
   },
   {
     title: "Financial Dashboard",
+    emoji: "📊",
     icon: BarChart3,
     color: "text-purple-500",
     bg: "bg-purple-500/10",
     items: [
       "Real-time Overview — total house expenses vs. your personal monthly spending.",
       "Smart Settlements — automated calculation of who owes whom, optimized to minimize transaction count.",
-      "Expense History — browse recent expenses or navigate through previous months with ease.",
+      "Expense History — browse recent expenses or navigate through previous months.",
       "Currency Support — configurable house currency ($, ₹, £, etc.).",
       "PDF Export — generate professional expense reports with one click (via jsPDF)."
     ]
   },
   {
     title: "Shopping & Expenses",
+    emoji: "🧾",
     icon: ShoppingCart,
     color: "text-orange-500",
     bg: "bg-orange-500/10",
@@ -64,7 +69,7 @@ const featureGroups = [
       "Multi-Contributor Splitting — split bills by absolute amounts or percentages.",
       "Shortcut Actions — \"I Pay All\" or \"Split Equally\" for rapid entry.",
       "Interactive Buy List — shared list with auto-capitalization and check-off history.",
-      "Smart Auto-Mark — when an expense is added, the matching item on the buy list is automatically ticked.",
+      "✨ Smart Auto-Mark — automated ticking of items when expenses are added.",
       "Cleanup Automation — completed items auto-delete after 12 hours."
     ]
   }
@@ -88,7 +93,11 @@ export function Features() {
                 <div className={`p-4 rounded-2xl ${group.bg} ${group.color} group-hover:scale-110 transition-transform duration-500`}>
                   <group.icon className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold tracking-tight">{group.title}</h3>
+                <div>
+                  <h3 className="text-2xl font-bold tracking-tight flex items-center gap-2">
+                    <span>{group.emoji}</span> {group.title}
+                  </h3>
+                </div>
               </div>
               
               <ul className="space-y-4 flex-1">
@@ -106,7 +115,7 @@ export function Features() {
         <div className="mt-24">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="text-gradient">Notifications</span> System
+              <span className="text-gradient">Notifications</span> System 🔔
             </h3>
             <p className="text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               OurTab keeps the whole house in sync with real-time, categorized alerts:
@@ -114,31 +123,49 @@ export function Features() {
           </div>
 
           <GlassCard className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 border-accent/10">
-            <div className="space-y-2">
-              <h4 className="font-bold flex items-center gap-2 text-primary"><ShoppingCart className="w-4 h-4" /> Shopping Alerts</h4>
+            <div className="space-y-2 group">
+              <h4 className="font-bold flex items-center gap-2 text-primary group-hover:translate-x-1 transition-transform">
+                <ShoppingCart className="w-4 h-4" /> 🛒 Shopping Alerts
+              </h4>
               <p className="text-sm text-muted-foreground">Notified when housemates add items to the Buy List.</p>
             </div>
-            <div className="space-y-2">
-              <h4 className="font-bold flex items-center gap-2 text-primary"><BarChart3 className="w-4 h-4" /> Expense Alerts</h4>
+            <div className="space-y-2 group">
+              <h4 className="font-bold flex items-center gap-2 text-primary group-hover:translate-x-1 transition-transform">
+                <BarChart3 className="w-4 h-4" /> 🧾 Expense Alerts
+              </h4>
               <p className="text-sm text-muted-foreground">Stay updated whenever a new bill is added or edited.</p>
             </div>
-            <div className="space-y-2">
-              <h4 className="font-bold flex items-center gap-2 text-primary"><PieChart className="w-4 h-4" /> Payment & Funds</h4>
+            <div className="space-y-2 group">
+              <h4 className="font-bold flex items-center gap-2 text-primary group-hover:translate-x-1 transition-transform">
+                <PieChart className="w-4 h-4" /> 💳 Payment & Funds
+              </h4>
               <p className="text-sm text-muted-foreground">Alerts for requests, deposit approvals, or settled debts.</p>
             </div>
-            <div className="space-y-2">
-              <h4 className="font-bold flex items-center gap-2 text-primary"><Users className="w-4 h-4" /> House Management</h4>
+            <div className="space-y-2 group">
+              <h4 className="font-bold flex items-center gap-2 text-primary group-hover:translate-x-1 transition-transform">
+                <Users className="w-4 h-4" /> 🏠 House Management
+              </h4>
               <p className="text-sm text-muted-foreground">Role changes, new members, or house deletion requests.</p>
             </div>
-            <div className="space-y-2">
-              <h4 className="font-bold flex items-center gap-2 text-primary"><Sparkles className="w-4 h-4" /> Meal Requests</h4>
+            <div className="space-y-2 group">
+              <h4 className="font-bold flex items-center gap-2 text-primary group-hover:translate-x-1 transition-transform">
+                <Sparkles className="w-4 h-4" /> 🍽️ Meal Requests
+              </h4>
               <p className="text-sm text-muted-foreground">Managers are notified of meal status changes.</p>
             </div>
-            <div className="space-y-2">
-              <h4 className="font-bold flex items-center gap-2 text-primary"><BellRing className="w-4 h-4" /> Special Occasions</h4>
+            <div className="space-y-2 group">
+              <h4 className="font-bold flex items-center gap-2 text-primary group-hover:translate-x-1 transition-transform">
+                <BellRing className="w-4 h-4" /> 🎂 Special Occasions
+              </h4>
               <p className="text-sm text-muted-foreground">Automated birthday reminders for house members.</p>
             </div>
           </GlassCard>
+
+          <div className="mt-12 text-center">
+            <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full glass border-primary/10 text-primary font-medium animate-pulse">
+              <Zap className="w-4 h-4" /> 🔊 Live Feedback pulses and custom sounds included.
+            </div>
+          </div>
         </div>
       </div>
     </section>

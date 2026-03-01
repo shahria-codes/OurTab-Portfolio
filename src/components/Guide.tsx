@@ -69,7 +69,7 @@ export function Guide() {
         <div className="mt-12 text-center">
           <div className="glass inline-flex items-center gap-3 px-6 py-3 rounded-full border-primary/5 text-sm text-muted-foreground">
             <Download className="w-4 h-4 animate-bounce" />
-            Once installed, you can access OurTab directly from your home screen like a native app.
+            Once installed, you can access OurTab directly from your home screen like a native app. And get notified.
           </div>
         </div>
       </div>
