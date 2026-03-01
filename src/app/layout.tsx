@@ -3,8 +3,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'OurTab Digital | Premium App Portfolio',
-  description: 'Elevate your digital presence with OurTab Digital. Experience premium glassmorphism and AI-powered marketing tools.',
+  title: 'OurTab | Premium App Portfolio',
+  description: 'Elevate your digital presence with OurTab. Experience premium glassmorphism and AI-powered management tools.',
 };
 
 export default function RootLayout({

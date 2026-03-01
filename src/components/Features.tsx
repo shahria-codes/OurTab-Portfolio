@@ -1,3 +1,4 @@
+
 "use client";
 
 import { GlassCard } from "./GlassCard";
@@ -82,7 +83,7 @@ export function Features() {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">Premium <span className="text-gradient">Ecosystem</span></h2>
           <p className="text-muted-foreground text-xl leading-relaxed">
-            OurTab Digital is a complete household management suite designed for transparency and peace of mind.
+            OurTab is a complete household management suite designed for transparency and peace of mind.
           </p>
         </div>
 

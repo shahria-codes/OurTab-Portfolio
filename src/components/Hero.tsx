@@ -1,10 +1,11 @@
+
 "use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { ArrowRight, PlayCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export function Hero() {
   const mockupImage = PlaceHolderImages.find(img => img.id === 'app-mockup');
@@ -31,7 +32,7 @@ export function Hero() {
           </h1>
           
           <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
-            OurTab Digital brings financial order to shared living. A professional workspace designed for houses who value clarity, security, and simplicity.
+            OurTab brings financial order to shared living. A professional workspace designed for houses who value clarity, security, and simplicity.
           </p>
 
           <div className="flex flex-wrap gap-4">

@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -33,7 +34,7 @@ export function Footer() {
           </div>
 
           <div className="text-sm text-muted-foreground flex flex-col items-center md:items-end gap-1">
-            <span>© {new Date().getFullYear()} OurTab Digital. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} OurTab. All rights reserved.</span>
             <span>
               Developed by:{" "}
               <Link 
