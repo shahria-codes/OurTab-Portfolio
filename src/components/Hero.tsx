@@ -13,40 +13,40 @@ export function Hero() {
   return (
     <section className="relative min-h-screen pt-32 pb-20 flex items-center overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 right-0 w-[50%] h-[50%] bg-accent/20 blur-[120px] rounded-full animate-pulse" />
-        <div className="absolute bottom-0 left-0 w-[40%] h-[40%] bg-primary/10 blur-[100px] rounded-full" />
+      <div className="absolute inset-0 -z-10 bg-black/50">
+        <div className="absolute top-1/4 right-1/4 w-[40%] h-[40%] bg-emerald-500/10 blur-[120px] rounded-full animate-pulse" />
+        <div className="absolute bottom-1/4 left-1/4 w-[30%] h-[30%] bg-cyan-500/10 blur-[100px] rounded-full" />
       </div>
 
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
         <div className="space-y-8 animate-in fade-in slide-in-from-left-8 duration-700">
           <div className="space-y-3">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border-primary/10 text-primary text-sm font-semibold">
-              <span className="flex h-2 w-2 rounded-full bg-accent animate-ping" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border-emerald-500/20 text-emerald-400 text-sm font-semibold shadow-[0_0_20px_-5px_rgba(16,185,129,0.2)]">
+              <span className="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping" />
               Empowering Household Collaboration
             </div>
-            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground/40 font-bold ml-4">
+            <p className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground/50 font-bold ml-4">
               Tab comes from Tabular
             </p>
           </div>
-          
-          <h1 className="text-6xl md:text-8xl font-bold leading-[0.9] tracking-tighter">
+
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tighter">
             Seamlessly <br />
             <span className="text-gradient">Manage</span> Your <br />
             Home Life.
           </h1>
-          
-          <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
+
+          <p className="text-xl text-muted-foreground max-w-lg leading-relaxed font-light">
             OurTab brings financial order to shared living. A professional workspace designed for houses who value clarity, security, and simplicity.
           </p>
 
-          <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="rounded-full bg-primary hover:bg-primary/90 px-8 h-14 text-lg" asChild>
+          <div className="flex flex-wrap gap-4 pt-4">
+            <Button size="lg" className="rounded-full bg-emerald-500 hover:bg-emerald-400 text-black px-8 h-14 text-lg font-semibold shadow-[0_0_30px_-5px_rgba(16,185,129,0.4)] transition-all duration-300 hover:shadow-[0_0_40px_-5px_rgba(16,185,129,0.6)] hover:-translate-y-1" asChild>
               <Link href="https://app.ourtab.online">
                 Get Started <ArrowRight className="ml-2 w-5 h-5" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="rounded-full glass border-white/30 h-14 text-lg px-8" asChild>
+            <Button size="lg" variant="outline" className="rounded-full glass border-white/10 hover:border-white/20 hover:bg-white/5 h-14 text-lg px-8 transition-all duration-300 hover:-translate-y-1" asChild>
               <Link href="#features">Explore Features</Link>
             </Button>
           </div>
@@ -54,10 +54,11 @@ export function Hero() {
 
         <div className="relative animate-in fade-in slide-in-from-right-8 duration-1000">
           <div className="relative z-10 animate-float">
-            <div className="glass p-4 rounded-[2.5rem] shadow-2xl rotate-3">
-              <div className="relative aspect-[9/16] rounded-[2rem] overflow-hidden">
+            <div className="glass p-2 rounded-[2.5rem] shadow-2xl rotate-3 border-emerald-500/20 bg-gradient-to-br from-emerald-500/5 to-transparent">
+              <div className="relative aspect-[9/16] rounded-[2rem] overflow-hidden border border-white/10">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60 z-10 pointer-events-none" />
                 <Image
-                  src={mockupImage?.imageUrl || ""}
+                  src="/images/dashboard-mockup.png"
                   alt="OurTab App Dashboard Mockup"
                   fill
                   className="object-cover"

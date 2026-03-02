@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Features } from "@/components/Features";
 import { Guide } from "@/components/Guide";
+import { Changelog } from "@/components/Changelog";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Guide />
+      <Changelog />
       <Footer />
     </main>
   );
