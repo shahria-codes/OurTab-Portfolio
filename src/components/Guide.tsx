@@ -2,7 +2,7 @@
 "use client";
 
 import { GlassCard } from "./GlassCard";
-import { Smartphone, Share, MoreVertical, PlusSquare, Download } from "lucide-react";
+import { Smartphone, Share, MoreVertical, PlusSquare, Download, Monitor } from "lucide-react";
 
 export function Guide() {
   return (
@@ -10,7 +10,7 @@ export function Guide() {
       <div className="absolute inset-0 -z-10 bg-black/30">
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none" />
       </div>
-      <div className="container mx-auto px-4 max-w-4xl relative z-10">
+      <div className="container mx-auto px-4 max-w-6xl relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Installation <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-cyan-400">Guide</span></h2>
           <p className="text-muted-foreground text-lg font-light">
@@ -18,7 +18,7 @@ export function Guide() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Android Section */}
           <GlassCard className="border-white/5 hover:border-emerald-500/30 transition-all duration-300 bg-black/40 backdrop-blur-xl shadow-lg hover:-translate-y-1">
             <div className="flex items-center gap-4 mb-6">
@@ -65,6 +65,31 @@ export function Guide() {
               <li className="flex gap-4 items-start">
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-cyan-500/20 text-xs font-bold text-cyan-400 border border-cyan-500/30">3</span>
                 <p>Scroll down and tap <span className="font-medium text-cyan-50">"Add to Home Screen"</span> <span className="inline-flex items-center translate-y-1 bg-white/5 p-1 rounded-md"><PlusSquare className="w-4 h-4 text-cyan-100" /></span>.</p>
+              </li>
+            </ol>
+          </GlassCard>
+
+          {/* Laptop / Desktop Section */}
+          <GlassCard className="border-white/5 hover:border-emerald-500/30 transition-all duration-300 bg-black/40 backdrop-blur-xl shadow-lg hover:-translate-y-1">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-3 bg-emerald-500/10 rounded-xl text-emerald-400 border border-emerald-500/20">
+                <Monitor className="w-6 h-6" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground">Laptop / Desktop</h3>
+            </div>
+
+            <ol className="space-y-6 text-muted-foreground/80 font-light">
+              <li className="flex gap-4 items-start">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-xs font-bold text-emerald-400 border border-emerald-500/30">1</span>
+                <p>Open <span className="font-medium text-emerald-50">Google Chrome</span> and navigate to <span className="text-emerald-400 underline decoration-emerald-500/30 underline-offset-4">app.ourtab.online</span></p>
+              </li>
+              <li className="flex gap-4 items-start">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-xs font-bold text-emerald-400 border border-emerald-500/30">2</span>
+                <p>Click the <span className="font-medium text-emerald-50">Install OurTab</span> icon in the top right of the address bar.</p>
+              </li>
+              <li className="flex gap-4 items-start">
+                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-emerald-500/20 text-xs font-bold text-emerald-400 border border-emerald-500/30">3</span>
+                <p>In the popup, click <span className="font-medium text-emerald-50">"Install"</span> to add to your desktop or taskbar.</p>
               </li>
             </ol>
           </GlassCard>

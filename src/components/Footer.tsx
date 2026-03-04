@@ -34,21 +34,6 @@ export function Footer() {
             <Link href="#" className="hover:text-emerald-400 transition-colors">Terms of Service</Link>
             <Link href="#" className="hover:text-emerald-400 transition-colors">Documentation</Link>
           </div>
-
-          <div className="text-sm text-muted-foreground/60 flex flex-col items-center md:items-end gap-1 font-light">
-            <span>© {new Date().getFullYear()} OurTab. All rights reserved.</span>
-            <span>
-              Developed by:{" "}
-              <Link
-                href="https://github.com/sria-the-fury"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium"
-              >
-                sria-the-fury
-              </Link>
-            </span>
-          </div>
         </div>
       </div>
     </footer>
