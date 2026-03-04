@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'OurTab',
     images: [
       {
-        url: '/images/og-image.png',
+        url: '/images/icon.png',
         width: 1200,
         height: 630,
         alt: 'OurTab Preview',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'OurTab | Meal System & Expenses Tracking',
     description: 'The ultimate Meal System and Expenses Tracking app for your Bachelor House.',
-    images: ['/images/og-image.png'],
+    images: ['/images/icon.png'],
   },
   robots: {
     index: true,
