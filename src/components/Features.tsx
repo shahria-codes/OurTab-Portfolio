@@ -129,10 +129,10 @@ export function Features() {
 
           <div className="flex gap-6 overflow-x-auto pb-12 pt-4 snap-x snap-mandatory hide-scrollbar">
             {[
-              { src: "/images/screenshots/buy-list.png", alt: "Buy List" },
-              { src: "/images/screenshots/expense.png", alt: "Adding an Expense" },
               { src: "/images/screenshots/deposit.png", alt: "Fund Deposit Breakdown" },
               { src: "/images/screenshots/meals.png", alt: "Meal Tracking" },
+              { src: "/images/screenshots/buy-list.png", alt: "Buy List" },
+              { src: "/images/screenshots/expense.png", alt: "Adding an Expense" },
               { src: "/images/screenshots/profile.png", alt: "User Profile" },
             ].map((img, i) => (
               <div key={i} className="min-w-[280px] md:min-w-[320px] aspect-[9/19.5] relative snap-center rounded-[2.5rem] overflow-hidden border-[6px] border-white/5 shadow-2xl shrink-0 group bg-black/50">
