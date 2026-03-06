@@ -4,22 +4,29 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ourtab.online'),
-  title: 'OurTab | Meal System & Expenses Tracking for Bachelor Houses',
+  title: 'OurTab: The Ultimate Meal System & Expenses Tracking for Bachelor Houses',
   description: 'The ultimate Meal System and Expenses Tracking app for your Bachelor House. Elevate your household management with OurTab. Experience seamless collaboration and financial clarity.',
-  keywords: ['Meal System', 'Bachelor House', 'Expenses Tracking', 'Household Management', 'Split Bills'],
+  keywords: ['OurTab', 'Meal System', 'Bachelor House', 'Expenses Tracking', 'Household Management', 'Split Bills'],
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: '/icon.png',
+  },
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'OurTab | Meal System & Expenses Tracking',
+    title: 'OurTab: Meal System & Expenses Tracking',
     description: 'The ultimate Meal System and Expenses Tracking app for your Bachelor House.',
     url: 'https://ourtab.online',
     siteName: 'OurTab',
     images: [
       {
-        url: '/images/icon.png',
-        width: 1200,
-        height: 630,
+        url: '/icon.png',
+        width: 512,
+        height: 512,
         alt: 'OurTab Preview',
       },
     ],
