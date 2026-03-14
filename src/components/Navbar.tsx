@@ -10,7 +10,7 @@ export function Navbar() {
       <div className="container mx-auto">
         <div className="glass px-6 py-3 rounded-full flex items-center justify-between border-emerald-500/20 shadow-[0_4px_30px_rgba(0,0,0,0.1)] transition-all duration-300 hover:border-emerald-500/40">
           <Link href="/" className="text-2xl font-bold font-headline text-primary tracking-tight group">
-            OurTab<span className="text-emerald-400 group-hover:text-teal-300 transition-colors">.</span>
+            OurTab<span className="text-emerald-400 group-hover:text-teal-300 transition-colors" aria-hidden="true">.</span>
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

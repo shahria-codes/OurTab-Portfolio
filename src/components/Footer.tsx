@@ -7,7 +7,7 @@ export function Footer() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center pt-12 border-t border-white/10 gap-4">
           <div className="text-2xl font-bold font-headline text-primary tracking-tight">
-            OurTab<span className="text-emerald-400">.</span>
+            OurTab<span className="text-emerald-400" aria-hidden="true">.</span>
           </div>
           <p className="text-sm text-muted-foreground/60 font-light">
             © {new Date().getFullYear()} OurTab. All rights reserved.

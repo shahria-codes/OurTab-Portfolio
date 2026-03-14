@@ -7,7 +7,7 @@ import { Smartphone, Share, MoreVertical, PlusSquare, Download, Monitor } from "
 export function Guide() {
   return (
     <section id="guide" className="py-24 relative overflow-hidden">
-      <div className="absolute inset-0 -z-10 bg-black/30">
+      <div className="absolute inset-0 -z-10 bg-black/30" aria-hidden="true">
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/10 blur-[120px] rounded-full pointer-events-none" />
       </div>
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
